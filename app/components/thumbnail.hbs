@@ -1,0 +1,6 @@
+<div class="img-wrapper" {{on "click" this.onClick}}>
+  <img src={{@item.src}} />
+  {{#if @item.is_premium}}
+    <div class="badge">🔒</div>
+  {{/if}}
+</div>
