@@ -7,14 +7,12 @@ module.exports = function (environment) {
     rootURL: '/',
     locationType: 'history',
     EmberENV: {
-      EXTEND_PROTOTYPES: {
-        Date: false
-      },
+      EXTEND_PROTOTYPES: false,
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
-      _DEBUG_RENDER_TREE: false,
+      _wefwefwe: false,
     },
 
     APP: {
