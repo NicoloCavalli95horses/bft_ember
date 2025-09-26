@@ -6,14 +6,7 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'history',
-    EmberENV: {
-      EXTEND_PROTOTYPES: false,
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
-      },
-    },
-
+    EmberENV: false,
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -41,7 +34,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV['ember-inspector'] = {
+      enable: false
+    };
   }
 
   return ENV;
