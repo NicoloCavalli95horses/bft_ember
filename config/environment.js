@@ -15,8 +15,8 @@ module.exports = function (environment) {
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
       // _DEBUG_RENDER_TREE: false,
-      // LOG_STACKTRACE_ON_DEPRECATION: false,
-      // LOG_VERSION: false
+      LOG_STACKTRACE_ON_DEPRECATION: false,
+      LOG_VERSION: false
     },
 
     APP: {
@@ -47,10 +47,9 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    window.NO_EMBER_DEBUG = true;
-    // ENV['ember-inspector'] = {
-    //   enable: false
-    // };
+    ENV['ember-inspector'] = {
+      enable: false
+    };
   }
 
   return ENV;
