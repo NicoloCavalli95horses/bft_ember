@@ -12,6 +12,7 @@ module.exports = function (environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
+      _DEBUG_RENDER_TREE: false,
     },
 
     APP: {
@@ -42,8 +43,6 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-      // _DEBUG_RENDER_TREE: true,
-    ENV.APP._DEBUG_RENDER_TREE = false;
   }
 
   return ENV;
